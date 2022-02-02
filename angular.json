@@ -79,11 +79,11 @@
           "configurations": {
             "production": {
               "browserTarget": "test-forms:build:production",
-              "proxyConfig": "proxy.conf.json"
+              "proxyConfig": "proxy.config.json"
             },
             "development": {
               "browserTarget": "test-forms:build:development",
-              "proxyConfig": "proxy.conf.json"
+              "proxyConfig": "proxy.config.json"
             }
           },
           "defaultConfiguration": "development",
