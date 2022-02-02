@@ -6,6 +6,7 @@
     "changeOrigin": true,
     "pathRewrite": {
       "^/labs/labs-login": ""
+
     }
   },
   "/labs/otp-verification/*": {
