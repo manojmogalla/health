@@ -82,18 +82,10 @@
                   *ngIf="submitted && f.assistantMobile.errors"
                   class="invalid-feedback"
                 >
-                  <div *ngIf="f.assistantMobile.errors.required">
+                  <div *ngIf="f.assistantMobile.errors.required || f.assistantMobile.errors.pattern || f.assistantMobile.errors.maxlength || f.centerMobile.errors.minlength">
                     Please enter a valid mobile number
                   </div>
-                  <div *ngIf="f.assistantMobile.errors.pattern">
-                    Please enter a valid mobile number
-                  </div>
-                  <div *ngIf="f.assistantMobile.errors.maxlength">
-                    Please enter a valid mobile number
-                  </div>
-                  <div *ngIf="f.centerMobile.errors.minlength">
-                    Please enter a valid mobile number
-                  </div>
+                  
                 </div>
               </div>
               <div class="form-group col-lg-6">
