@@ -8,7 +8,7 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root',
 })
 export class AuthService {
-   login = '/v1/labs/labs-login';
+   login = '/labs/labs-login';
    otpverify = '/labs/otp-verification';
    forgotpassword='/labs/labs-forgot-password';
    resetpassword='/labs/reset-password';

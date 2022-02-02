@@ -1,14 +1,10 @@
-
 {
-  "/v1": {
+  "/labs/labs-login/*": {
     "target": "http://164.52.209.69/totalhealthbazar/backend/web/index.php/v1",
     "secure": false,
-    "logLevel": "debug",
     "loglevel": "debug",
-    "changeOrigin": true,
-    "pathRewrite": {"^/v1" : ""}
+    "changeOrigin": true
   },
-
   "/labs/otp-verification/*": {
     "target": "http://164.52.209.69/totalhealthbazar/backend/web/index.php/v1",
     "secure": false,
