@@ -1,0 +1,41 @@
+<div class="loginMain" id="loginform">
+    <div class="loginpage_logo mb-2">
+        <img src="assets/images/logo.png" alt="Menuss kard" height="100" />
+    </div>
+
+    <h2 class="pagetitle">Welcom to <span>Helth Bazaar</span></h2>
+    <p class="semiTitle">Insert your credentials to get started</p>
+
+    <div class="logintab_button">
+        <ul class="nav nav-tabs">
+            <li class="nav-item" [class.active]="activeTab == 'tab1' ">
+                <a class="btn tablogin-btn nav-link" data-toggle="tab"><span class="checkicon"><span
+                            class="checkmark"></span></span>Doctor</a>
+            </li>
+            <li class="nav-item" [class.active]="activeTab == 'tab2' ">
+                <a class="btn tablogin-btn nav-link" data-toggle="tab"><span class="checkicon"><span
+                            class="checkmark"></span></span>
+                    Hospital</a>
+            </li>
+            <li class="nav-item"  [class.active]="activeTab == 'tab3' ">
+                <a class="btn tablogin-btn nav-link active" data-toggle="tab"><span class="checkicon"><span
+                            class="checkmark"></span></span>
+                    Lab Assistant</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="tab-content">
+        <div class="tab-pane" id="Docter" [class.hidden]="activeTab == 'tab2' ||   activeTab == 'tab3'">
+            <app-docter-login></app-docter-login>
+        </div>
+
+        <div class="tab-pane fade" id="Hospital" [class.hidden]="activeTab == 'tab1' ||   activeTab == 'tab3'">
+            <app-hospital-login></app-hospital-login>
+        </div>
+
+        <div class="tab-pane fade active show" id="labAssistant" [class.hidden]="activeTab == 'tab1' ||   activeTab == 'tab2'">
+            <app-lab-assistant-login> </app-lab-assistant-login>
+        </div>
+    </div>
+</div>

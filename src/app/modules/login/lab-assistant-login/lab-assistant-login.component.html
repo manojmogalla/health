@@ -1,0 +1,67 @@
+<Form
+  [formGroup]="labAssLogin"
+  class="loginpageform bootstrap-form needs-validation"
+>
+  <!-- {{labAssLogin.valid | json}}<br> -->
+  <div class="form-group text-left">
+    <label for="input1">Enter your Mobile</label>
+    <input
+      type="tel" inputmode="tel" maxlength="10"
+      class="form-control"
+      formControlName="labMobileNo"
+      autocomplete="off"
+      placeholder=" lab assistantEnter Mobileno."
+   
+      [ngClass]="{ 'is-invalid': submitted && f.labMobileNo.errors }"
+    />
+    <div *ngIf="submitted && f.labMobileNo.errors" class="invalid-feedback">
+      <div *ngIf="f.labMobileNo.errors.required">
+        Please enter a valid mobile number
+      </div>
+      <div *ngIf="f.labMobileNo.errors.pattern || f.labMobileNo.errors.minlength">
+        Please enter a valid mobile number
+      </div>
+     
+    </div>
+  </div>
+  <div class="form-group text-left position-relative">
+    <label for="input2">Password </label>
+
+    <input
+      [type]="fieldTextType ? 'text' : 'password'"
+      [ngClass]="{'is-invalid': submitted && f.labPassword.errors }"
+      class="form-control"
+      formControlName="labPassword"
+      placeholder="Enter Password"
+    />
+    <span class="eyeshow pasword-hideshow" (click)="toggleFieldTextType()">
+      <i
+        class="fa"
+        [ngClass]="{
+          'fa-eye-slash': !fieldTextType,
+          'fa-eye': fieldTextType
+        }"
+      ></i>
+    </span>
+    <div *ngIf="submitted && f.labPassword.errors" class="invalid-feedback">
+      <div *ngIf="f.labPassword.errors.required">Password is required</div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="d-flex">
+      <a routerLink="/forgot-password" (click)="forgetPass()"
+        ><i class="fa fa-lock m-r-5"></i> Forgot Password?</a
+      >
+    </div>
+  </div>
+  <div class="text-center m-t-20">
+    <button
+      class="btn btn-info w-100 btn-lg btn-block theme-btn"
+      (click)="labAssLoginFormSubmit()"
+      type="button"
+    >
+      Login
+    </button>
+  </div>
+</Form>

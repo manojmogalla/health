@@ -1,0 +1,211 @@
+<div class="page-wrapper pt-3">
+	<div class="container">
+		<!-- <div class="information-content appoinmentList labtestList form-row mt-3">
+			<div class="col labtestListItem order-2 order-lg-1">
+				<a routerLink="/lab-test/lab-test-active"   class="colored-box box-yellow active">
+					<p>Active Tests/ Diagnosis</p>
+				</a>
+			</div>
+			<div class="col labtestListItem order-3 order-lg-2">
+      <a routerLink="/lab-test/lab-test-approval-pending"  class="colored-box box-gray">
+					<p>Approval Pending</p>
+				</a>
+			</div>
+			<div class="col labtestListItem order-4 order-lg-3">
+				<a routerLink="/lab-test/lab-test-inactive"  class="colored-box box-gray">
+					<p>In-Active Test</p>
+				</a>
+			</div>
+			<div class="col-lg-3 col-md-12 ml-auto text-right order-1 order-lg-4 pb-3 pb-lg-0">
+				<a class="btn btn-info btn-sm theme-btn" data-toggle="modal" data-target="#AddLabTest">
+					<i class="fa fa-plus-square"></i>
+					Add New Test/Diagnosis
+				</a>
+			</div>
+		</div> -->
+    <div class="tab">
+      <button class="tablinks" routerLink="/lab-test/labtest-active">Tab 1</button>
+      <button class="tablinks" (click)="setTab('tab2')">Tab 2</button>
+      <button class="tablinks" (click)="setTab('tab3')">Tab 3</button>
+    </div>
+
+		<div class="card">
+			<div class="card-body">
+				<div class="row align-items-center">
+					<div class="col-lg-3 col-md-6">
+						<div class="form-group">
+							<label>Lab Test/ Diagnosis </label>
+							<select class="form-control custom-select">
+								<option>All</option>
+								<option>Biopsy</option>
+								<option>Blood Pressure</option>
+								<option>Blood Tests</option>
+								<option>Breathing</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="form-group">
+							<label>Test Category </label>
+							<select class="form-control custom-select">
+								<option>All</option>
+								<option>Complete Blood Count</option>
+								<option>Prothrombin </option>
+								<option>Basic Metabolic</option>
+								<option>Comprehensive </option>
+								<option>Lipid Panel </option>
+							</select>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="form-group">
+							<label>Test Type </label>
+							<select class="form-control custom-select">
+								<option>All</option>
+								<option>Type 1</option>
+								<option>Type 2</option>
+								<option>Type 3</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="card tableListBorder">
+			<div class="card-body">
+				<div class="row align-items-center">
+					<div class="col-lg-4 col-md-6">
+						<div class="form-group">
+							<input type="text" class="form-control" id="searchBox" placeholder="Search..">
+							<span class="addons"><i class="fa fa-search"></i></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="row align-items-center">
+					<div class="col-lg-4 col-md-6" *ngFor="let data of diagnosisList">
+						<div class="itemTestlist">
+							<div class="d-flex">
+								<div class="testImg pr-3">
+									<img src="../assets/images/thyroid.png" alt="test">
+								</div>
+								<div class="testContent">
+									<a href="lab-test-details-thyroid.html">
+										<h5 class="mb-0">
+											{{data.diagnosisName}}
+										</h5>
+									</a>
+									<p [innerHtml]=data.diagnosisShortDescription>
+									</p>
+								</div>
+								<div class="pl-3">
+									<a class="dotMenu" href="#">
+										<i class="fa fa-ellipsis-v"></i>
+									</a>
+								</div>
+							</div>
+							<div class="d-flex">
+								<div class="freeDeliver"><i class="fa fa-ambulance"></i> Free Sample Pick-up</div>
+								<div class="amount ml-auto"><small class="fa fa-inr"></small> 500 </div>
+							</div>
+						</div>
+					</div>
+
+					<!-- <div class="col-lg-4 col-md-6">
+						<div class="itemTestlist">
+							<div class="d-flex">
+								<div class="testImg pr-3"><img src="../assets/images/thyroid.png" alt="test"></div>
+								<div class="testContent">
+									<a href="lab-test-details-thyroid.html">
+										<h5 class="mb-0">Thyroid Test</h5>
+									</a>
+									<p>Lorem Ipsum is simply dummy text used in design industry...</p>
+								</div>
+								<div class="pl-3"><a class="dotMenu" href="#"><i class="fa fa-ellipsis-v"></i></a></div>
+							</div>
+							<div class="d-flex">
+								<div class="freeDeliver"><i class="fa fa-ambulance"></i> Free Sample Pick-up</div>
+								<div class="amount ml-auto"><small class="fa fa-inr"></small> 500 </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="itemTestlist">
+							<div class="d-flex">
+								<div class="testImg pr-3"><img src="../assets/images/sugar-test.png" alt="test"></div>
+								<div class="testContent">
+									<a href="#">
+										<h5 class="mb-0">Blood Test</h5>
+									</a>
+									<p>Lorem Ipsum is simply dummy text used in design industry...</p>
+								</div>
+								<div class="pl-3"><a class="dotMenu" href="#"><i class="fa fa-ellipsis-v"></i></a></div>
+							</div>
+							<div class="d-flex">
+								<div class="freeDeliver"><i class="fa fa-ambulance"></i> Free Sample Pick-up</div>
+								<div class="amount ml-auto"><small class="fa fa-inr"></small> 500 </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="itemTestlist">
+							<div class="d-flex">
+								<div class="testImg pr-3"><img src="../assets/images/blood-count.png" alt="test"></div>
+								<div class="testContent">
+									<a href="#">
+										<h5 class="mb-0">Blood Count Test</h5>
+									</a>
+									<p>Lorem Ipsum is simply dummy text used in design industry...</p>
+								</div>
+								<div class="pl-3"><a class="dotMenu" href="#"><i class="fa fa-ellipsis-v"></i></a></div>
+							</div>
+							<div class="d-flex">
+								<div class="freeDeliver"><i class="fa fa-ambulance"></i> Free Sample Pick-up</div>
+								<div class="amount ml-auto"><small class="fa fa-inr"></small> 500 </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="itemTestlist">
+							<div class="d-flex">
+								<div class="testImg pr-3"><img src="../assets/images/heart-checkup.png" alt="test">
+								</div>
+								<div class="testContent">
+									<a href="#">
+										<h5 class="mb-0">Heart Test</h5>
+									</a>
+									<p>Lorem Ipsum is simply dummy text used in design industry...</p>
+								</div>
+								<div class="pl-3"><a class="dotMenu" href="#"><i class="fa fa-ellipsis-v"></i></a></div>
+							</div>
+							<div class="d-flex">
+								<div class="freeDeliver"><i class="fa fa-ambulance"></i> Free Sample Pick-up</div>
+								<div class="amount ml-auto"><small class="fa fa-inr"></small> 500 </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="itemTestlist">
+							<div class="d-flex">
+								<div class="testImg pr-3"><img src="../assets/images/health-checkup.png" alt="test">
+								</div>
+								<div class="testContent">
+									<a href="#">
+										<h5 class="mb-0">Health Checkup</h5>
+									</a>
+									<p>Lorem Ipsum is simply dummy text used in design industry...</p>
+								</div>
+								<div class="pl-3"><a class="dotMenu" href="#"><i class="fa fa-ellipsis-v"></i></a></div>
+							</div>
+							<div class="d-flex">
+								<div class="freeDeliver"><i class="fa fa-ambulance"></i> Free Sample Pick-up</div>
+								<div class="amount ml-auto"><small class="fa fa-inr"></small> 500 </div>
+							</div>
+						</div>
+					</div> -->
+				</div>
+
+			</div>
+		</div>
+	</div>

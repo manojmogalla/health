@@ -1,0 +1,67 @@
+<header class="topbar">
+    <div class="container">
+        <nav class="navbar top-navbar navbar-toggleable-sm navbar-light">
+            <div class="navbar-header">
+                <a class="navbar-brand"><img src="../assets/images/logo.png" alt="" class="dark-logo" /> </a>
+            </div>
+
+            <div class="main-menu ml-auto">
+                <nav class="navbar top-navbar navbar-toggleable-sm navbar-light">
+                    <ul class="navbar-nav my-lg-0">
+                        <li class="nav-item noarrowdrop">
+                            <a class="nav-link dropdown-toggle active" routerLink="/lab-assistant/home"> <span>Home</span></a>
+                        </li>
+                        <li class="nav-item noarrowdrop"><a class="nav-link dropdown-toggle" routerLink="/lab-assistant/appointments"><span>Appointments</span></a></li>
+                        <li class="nav-item noarrowdrop"><a class="nav-link dropdown-toggle" routerLink="/lab-assistant/lab-assistants"><span>Lab Assistants</span></a></li>
+                        <li class="nav-item noarrowdrop"><a class="nav-link dropdown-toggle" routerLink="/lab-assistant/lab-test"><span>Lab Test</span></a></li>
+                        <li class="nav-item noarrowdrop"><a class="nav-link dropdown-toggle" routerLink="/lab-assistant/lab-centers"><span>Lab Centers</span></a></li>
+                        <li class="nav-item noarrowdrop"><a class="nav-link dropdown-toggle" routerLink="/lab-assistant/lab-reports"><span>Reports</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="navbar-collapse " style="width:auto;">
+                <ul class="navbar-nav my-lg-0 topmenu-content">
+                    <li class="nav-item dropdown noarrowdrop">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-bell"></i>
+                            <div class="notify"> <span class="point"></span> </div>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" routerLink="/lab-assistant/profile"> <img src="../assets/images/lab.png" alt="lab">
+                            <span class="d-none d-lg-inline-block"> &nbsp; Uniq Laboratory</span></a>
+                            <a class="color-red" (click)="logout()"><i class="fa fa-sign-out"></i> Logout </a>
+                        <div class="dropdown-menu dropdown-menu-right scale-up">
+                            <ul class="dropdown-user">
+                                <li>
+                                    <a class="profilemenu" routerLink="/lab-assistant/profile"><img src="../assets/images/lab.png" alt="lab" width="17"> Profile </a>
+                                </li>
+                                <li><a class="color-red"><i class="fa fa-sign-out"></i> Logout </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link nav-toggler d-md-none" href=""><i class="fa fa-bars"></i></a> </li>
+                </ul>
+            </div>
+
+        </nav>
+    </div>
+</header>
+
+<!-- <aside class="left-sidebar">
+    <div class="scroll-sidebar">
+        <nav class="sidebar-nav">
+            <ul id="sidebarnav">
+                <li><a class="active"><span class="hide-menu"> Home  </span></a></li>
+                <li><a href="appointments-new-request.html"><span class="hide-menu"> Appointments </span></a></li>
+        <li><a href="lab-assistants-list.html"><span class="hide-menu"> Lab Assistants </span></a></li>
+        <li><a href="lab-test-active.html"><span class="hide-menu"> Lab Test </span></a></li>
+        <li><a href="lab-centers-list.html"><span class="hide-menu"> Lab Centers </span></a></li>
+        <li><a href="reports.html"><span class="hide-menu"> Reports </span></a></li>
+            </ul>
+        </nav>
+    </div>
+</aside> -->
+<!-- <router-outlet></router-outlet> -->

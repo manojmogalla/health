@@ -1,0 +1,73 @@
+<div class="page-wrapper pt-3">
+    <div class="container">
+
+        <div class="card tableListBorder">
+            <div class="card-body">
+                <h4 class="title_head mb-3">Lab Assistants</h4>
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="form-group mb-0">
+                            <input type="text" class="form-control" id="searchBox" placeholder="Search..">
+                            <span class="addons"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                    <!--<div class="col-lg-3 col-md-6">
+       <div class="form-group mb-0">
+         <select class="form-control custom-select">
+            <option>Select Doctor</option>
+            <option>Sunil Patil</option>
+            <option>Pragti Yagnik</option>
+            <option>Kartik Raman</option>
+            <option>Pritesh Rajani</option>
+          </select>
+        </div>
+     </div>-->
+                    <div class="col-lg-3 col-md-12 ml-auto text-right 	order-1 order-lg-4 pb-3 pb-lg-0">
+                        <a routerLink="/lab-assistant/add-lab-assistant" class="btn btn-info btn-sm theme-btn"><i class="fa fa-plus-square"></i> Add New Lab Assistant</a>
+                    </div>
+                </div>
+
+                <br>
+                <div class="table-responsive">
+                    <table class="table product-overview">
+                        <thead class="">
+                            <tr>
+                                <th>Supervisor ID</th>
+                                <th>Supervisor Name</th>
+                                <th>Email</th>
+                                <th>Reg.Date</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let labAssit of labAssitant; index as i">
+                                <td> {{labAssit.assistantID}} </td>
+                                <td>
+                                    <p class="mb-0">{{labAssit.assistantFirstName}}</p>
+                                    <p class="mb-0">{{labAssit.assistantMobile}}</p>
+                                </td>
+                                <td>{{labAssit.assistantEmail}}</td>
+                                <td>
+                                    <p class="mb-0">{{labAssit.assistantDutyStatus}}</p>
+                                    <p class="mb-0">{{labAssit.assistantCreatedDate}} </p>
+                                </td>
+                                <td>{{labAssit.assistantStatus}}</td>
+                                <td>
+                                    <a class="me-1" href="view-lab-center.html" data-toggle="tooltip" data-original-title="View"><i
+                                        class="fa fa-eye"></i></a>
+                                    <a class="me-1" data-toggle="tooltip" data-original-title="Disable" href="javascript:void(0)"><i
+                                        class="fa fa-ban"></i></a>
+                                    <a class="me-1" href="javascript:void(0)"  (click)="editAssistant(labAssit)" data-toggle="tooltip" data-original-title="Edit"><i
+                                        class="fa fa-pencil"></i></a>
+                                    <a class="me-1" href="javascript:void(0)" (click)="deleteAssistant(labAssit)" data-toggle="tooltip" data-original-title="Delete"><i
+                                        class="fa fa-trash"></i></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

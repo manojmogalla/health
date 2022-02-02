@@ -1,0 +1,73 @@
+<header>
+  <nav>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-xl-2 col-lg-2 col-md-5 col-sm-5 col-4">
+          <div class="brand-logo">
+            <a href="index.html"
+              ><img src="img/health-bazaar-logo.png" alt="Health Bazaar"
+            /></a>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-1 col-sm-1 col-2">
+          <div class="form-group has-location mobile-hide">
+            <i class="bi bi-geo-alt-fill form-control-feedback"></i>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Ahmedabad"
+              data-toggle="modal"
+              data-target="#LocationModal"
+            />
+          </div>
+          <a
+            href=""
+            class="booknow"
+            data-toggle="modal"
+            data-target="#LocationModal"
+          >
+            <label style="padding: 0.25rem 0.5rem"
+              ><i class="bi bi-geo-alt-fill"></i
+            ></label>
+          </a>
+        </div>
+        <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1 col-2">
+          <a href="doctor-list.html" class="booknow">
+            <div>
+              Doctor Appointment
+              <span>Book Now <i class="bi bi-chevron-right"></i></span>
+            </div>
+            <label><img src="img/doctor.png" /></label>
+          </a>
+        </div>
+        <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1 col-2">
+          <a href="lab-list.html" class="booknow">
+            <div>
+              Lab Text / Dignosis
+              <span>Book Now <i class="bi bi-chevron-right"></i></span>
+            </div>
+            <label><img src="img/microscope.png" /></label>
+          </a>
+        </div>
+        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-2 text-right">
+          <div class="login-dropdown">
+            <a href="#">
+              <img src="img/avtar.jpg" class="avtar" />
+              <span>Meet Shah</span>
+            </a>
+          </div>
+          <div class="dropdown-block">
+            <ul>
+              <li>
+                <a [routerLink]="[/profile']"  >My Account</a>
+              </li>
+              <li>
+                <a href="#">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>

@@ -1,0 +1,63 @@
+<div class="page-wrapper pt-3">
+  <div class="container">
+<div class="card tableListBorder">
+        <div class="card-body">
+   <h4 class="title_head mb-3">Lab Centers</h4>
+          <div class="row align-items-center">
+            <div class="col-lg-3 col-md-6">
+       <div class="form-group mb-0">
+         <input type="text" class="form-control" id="searchBox" placeholder="Search..">
+         <span class="addons"><i class="fa fa-search"></i></span>
+       </div>
+     </div>
+
+     <div class="col-lg-3 col-md-12 ml-auto text-right 	order-1 order-lg-4 pb-3 pb-lg-0">
+       <a [routerLink]="'/lab-assistant/add-lab-center'" class="btn btn-info btn-sm theme-btn"><i class="fa fa-plus-square"></i> Add New Lab Center</a>
+     </div>
+          </div>
+
+   <br>
+   <div class="table-responsive">
+    <table class="table product-overview">
+      <thead class="">
+        <tr>
+          <th>Center ID</th>
+          <th>Center Name</th>
+          <th>Email</th>
+          <th>No.of Test</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let labCenter of labCenters; index as i">
+          <td>{{labCenter.centerID}} </td>
+          <td>
+            <p class="mb-0">{{labCenter.centerName}}</p>
+            <p class="mb-0">{{labCenter.centerMobile}}</p>
+          </td>
+          <td>{{labCenter.centerEmail}}</td>
+          <td>{{labCenter.centertests}}</td>
+          <td>{{labCenter.centerStatus}}</td>
+          <td>
+            <a class="mr-1" href="view-lab-center.html" data-toggle="tooltip" data-original-title="View"><i
+                class="fa fa-eye"></i></a>
+            <a class="mr-1" data-toggle="tooltip" data-original-title="Disable" href="javascript:void(0)" (click)="deActivateCenter(labCenter)"><i
+                class="fa fa-ban"></i></a>
+            <a class="mr-1" href="javascript:void(0)" (click)="editCenter(labCenter)" data-toggle="tooltip" data-original-title="Edit"><i
+                class="fa fa-pencil"></i></a>
+            <a class="mr-1" href="javascript:void(0)" (click)="deleteCenter(labCenter)" data-toggle="tooltip" data-original-title="Delete"><i
+                class="fa fa-trash"></i></a>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+    </div>
+        </div>
+     </div>
+   </div>
+
+
+
+</div>
