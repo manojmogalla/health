@@ -1,0 +1,152 @@
+{
+  "/labs/*": {
+    "target": "http://164.52.209.69/totalhealthbazar/backend/web/index.php/v1",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  },
+  "/labs/otp-verification/*": {
+    "target": "http://164.52.209.69/totalhealthbazar/backend/web/index.php/v1",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/labs/otp-resend/*": {
+    "target": "http://164.52.209.69/totalhealthbazar/backend/web/index.php/v1",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/labs/labs-update-device-token/*": {
+    "target": "http://164.52.209.69/totalhealthbazar/backend/web/index.php/v1",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/labs/labs-forgot-password/*": {
+    "target": "http://164.52.209.69/totalhealthbazar/backend/web/index.php/v1",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/labs/reset-password/*": {
+    "target": "http://164.52.209.69/totalhealthbazar/backend/web/index.php/v1",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/labs/labs-change-password/*": {
+    "target": "http://164.52.209.69/totalhealthbazar/backend/web/index.php/v1",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/labs/edit-working-hours/*": {
+    "target": "http://164.52.209.69/totalhealthbazar/backend/web/index.php/v1",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/labcenters/add-labcenter/*": {
+    "target": "http://164.52.209.69/totalhealthbazar/backend/web/index.php/v1",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/labcenters/update-labcenter/*": {
+    "target": "http://164.52.209.69/totalhealthbazar/backend/web/index.php/v1",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/labcenters/list-labcenter/*": {
+    "target": "http://164.52.209.69/totalhealthbazar/backend/web/index.php/v1",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/labcenters/delete-labcenter/*": {
+    "target": "http://164.52.209.69/totalhealthbazar/backend/web/index.php/v1",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/labcenters/update-status-labcenter/*": {
+    "target": "http://164.52.209.69/totalhealthbazar/backend/web/index.php/v1",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/labassistant/add-labassistant/*": {
+    "target": "http://164.52.209.69/totalhealthbazar/backend/web/index.php/v1",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/labassistant/update-labassistant/*": {
+    "target": "http://164.52.209.69/totalhealthbazar/backend/web/index.php/v1",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/labassistant/list-labassistant/*": {
+    "target": "http://164.52.209.69/totalhealthbazar/backend/web/index.php/v1",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/labassistant/update-status-labassistant/*": {
+    "target": "http://164.52.209.69/totalhealthbazar/backend/web/index.php/v1",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/labassistant/delete-labassistant/*": {
+    "target": "http://164.52.209.69/totalhealthbazar/backend/web/index.php/v1",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/masters/get-city-list/*": {
+    "target": "http://164.52.209.69/totalhealthbazar/backend/web/index.php/v1",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/labs/get-diagnosis-list/*": {
+    "target": "http://164.52.209.69/totalhealthbazar/backend/web/index.php/v1",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/appointment/lab-appointments/*": {
+    "target": "http://164.52.209.69/totalhealthbazar/backend/web/index.php/v1",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/appointment/complete-appointment*": {
+    "target": "http://164.52.209.69/totalhealthbazar/backend/web/index.php/v1",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/appointment/assign-assistant*": {
+    "target": "http://164.52.209.69/totalhealthbazar/backend/web/index.php/v1",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/labs/my-lab-tests/*": {
+    "target": "http://164.52.209.69/totalhealthbazar/backend/web/index.php/v1",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/labs/get-diagnosis-list*": {
+    "target": "http://164.52.209.69/totalhealthbazar/backend/web/index.php/v1",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  }
+}
