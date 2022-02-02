@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --proxy-config proxy.config.json",
+    "start": "ng serve --proxy-config proxy-config.json",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
@@ -31,7 +31,6 @@
     "bootstrap": "^5.0.2",
     "header": "^0.1.1",
     "http": "0.0.1-security",
-    "http-server": "^14.1.0",
     "injectable": "0.0.1",
     "ng-multiselect-dropdown": "^0.3.4",
     "ngx-cookie-service": "^12.0.0",
