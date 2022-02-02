@@ -6,7 +6,8 @@
     "changeOrigin": true,
     "pathRewrite": {
       "^/labs/labs-login": ""
-    },
+    }
+  },
   "/labs/otp-verification/*": {
     "target": "http://164.52.209.69/totalhealthbazar/backend/web/index.php/v1",
     "secure": false,
