@@ -1,4 +1,10 @@
+
 {
+  "/v1": {
+    "target": "http://164.52.209.69/totalhealthbazar/backend/web/index.php/v1",
+    "secure": false,
+    "logLevel": "debug"
+  },
   "/labs/labs-login/*": {
     "target": "http://164.52.209.69/totalhealthbazar/backend/web/index.php/v1",
     "secure": false,
@@ -6,7 +12,6 @@
     "changeOrigin": true,
     "pathRewrite": {
       "^/labs/labs-login": ""
-
     }
   },
   "/labs/otp-verification/*": {
@@ -75,7 +80,7 @@
     "loglevel": "debug",
     "changeOrigin": true
   },
-   "/labcenters/update-status-labcenter/*": {
+  "/labcenters/update-status-labcenter/*": {
     "target": "http://164.52.209.69/totalhealthbazar/backend/web/index.php/v1",
     "secure": false,
     "loglevel": "debug",
@@ -111,13 +116,13 @@
     "loglevel": "debug",
     "changeOrigin": true
   },
-  "/masters/get-city-list/*":{
+  "/masters/get-city-list/*": {
     "target": "http://164.52.209.69/totalhealthbazar/backend/web/index.php/v1",
     "secure": false,
     "loglevel": "debug",
     "changeOrigin": true
   },
-  "/labs/get-diagnosis-list/*":{
+  "/labs/get-diagnosis-list/*": {
     "target": "http://164.52.209.69/totalhealthbazar/backend/web/index.php/v1",
     "secure": false,
     "loglevel": "debug",
